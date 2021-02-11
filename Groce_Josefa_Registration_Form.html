@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Heroes of the Universe Registration Form</title>
+        <meta name="description" content="Registration form for all the heroes of the universe.">
+    </head>
+    <body>
+        <h1>Heroes of the Universe Registration Form</h1>
+        <form action="process.php" method="post">
+        <p>
+            <label for="hero_name">Hero Name:</label>
+            <input type="text" id="hero_name" name="hero_name">
+
+            <label for="team_name">Team Name:</label>
+            <input type="text" id="team_name" name="team_name">
+        </p>
+
+        <p>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email">
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password">
+
+            <label for="password">Password Confirm:</label>
+            <input type="text" id="password_confirm" name="password">
+        </p>
+
+        <p>
+            <label for="birthday">Birthday:</label>
+            <input type="text" id="birthday" name="birthday">
+        </p>
+        <p>Select your gender:</p>
+        <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="decline">Prefer not to say</option>
+        </select>
+
+        <p>Say where you are from?</p>
+        <textarea name="description"></textarea>
+
+        <p>Accepting New Missions?</p>
+        <select name="answer">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="another_time">Another Time</option>
+        </select>
+
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+        </form>
+    </body>
+</html>
